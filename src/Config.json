@@ -1,0 +1,47 @@
+{
+    "map": {
+        "flashOnClick": true,
+        "view": {
+            "zoomLevel": 13,
+            "latitude": 42.50683397680717,
+            "longitude": 27.468153915405313
+        }
+    },
+    "layers": {
+        "basemaps": [
+            {
+                "name": "osm",
+                "title": "OpenStreetMap"
+            },
+            {
+                "name": "bing_aerial",
+                "title": "Bing Aerial",
+                "icon": "https://blogs.bing.com/app_themes/bingblogs/images/favicon.ico",
+                "visible": false
+            }
+        ]
+    },
+    "widgets": {
+        "userLocation": {
+            "flash": {
+                "red": 48,
+                "green": 144,
+                "blue": 199
+            },
+            "style": {
+                "circle": {
+                    "fillColor": "#2B65EC",
+                    "strokeColor": "#0000A0",
+                    "radius": 8,
+                    "strokeWidth": 3
+                }
+            }
+        },
+        "geocode": {
+            "service": "http://alabak.info:8081/geocoding/"
+        },
+        "layerSwitcher": {
+            "createControl": true
+        }
+    }
+}
