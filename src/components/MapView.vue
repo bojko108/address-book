@@ -1,13 +1,15 @@
 <template>
-    <div id="mapp" class="fit"> </div>
+    <div id="mapp" class="fitа"> </div>
 </template>
 
 <script src="./MapView.js"></script>
 
 <style>
-/* #mapp {
+#mapp {
+    position: absolute;
+    bottom: 0px;
     width: 100%;
     height: 100%;
-} */
+}
 </style>
 

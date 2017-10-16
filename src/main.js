@@ -13,7 +13,19 @@ require(`quasar/dist/quasar.${__THEME}.css`)
 import Vue from 'vue';
 import VueStash from 'vue-stash';
 
-import Quasar, { QLayout, QToolbar, QToolbarTitle, QBtn, QIcon } from 'quasar';
+import Quasar, {
+  QLayout,
+  QToolbar,
+  QToolbarTitle,
+  QBtn,
+  QList,
+  QIcon,
+  QItem,
+  QCard,
+  QCardTitle,
+  QCardSeparator,
+  QCardMain
+} from 'quasar';
 
 Vue.config.productionTip = false;
 Vue.use(Quasar, {
@@ -22,7 +34,13 @@ Vue.use(Quasar, {
     QToolbar,
     QToolbarTitle,
     QBtn,
-    QIcon
+    QIcon,
+    QList,
+    QItem,
+    QCard,
+    QCardTitle,
+    QCardSeparator,
+    QCardMain
   }
 }); // Install Quasar Framework
 
@@ -43,7 +61,6 @@ Quasar.start(() => {
     render: h => h(require('./App.vue').default),
     data: {
       store: {
-        features: [],
         ugis: {}
       }
     }

@@ -8,6 +8,38 @@
         }
     },
     "layers": {
+        "operational": [
+            {
+                "name": "locations",
+                "title": "Адреси",
+                "type": "operational",
+                "empty": true,
+                "showInLegend": false,
+                "styles": [
+                    {
+                        "name": "default",
+                        "circle": {
+                            "fillColor": "#1589FF",
+                            "strokeColor": "#FFFF00",
+                            "radius": 10,
+                            "strokeWidth": 5
+                        },
+                        "text": {
+                            "labelMask": "{streetName} {streetNumber}",
+                            "font": "15px Calibri,sans-serif",
+                            "offsetX": 20,
+                            "offsetY": 0,
+                            "textAlign": "start",
+                            "textBaseline": "bottom",
+                            "fillColor": "#FFFFFF",
+                            "strokeColor": "#34282C",
+                            "strokeWidth": 4,
+                            "maxScale": 25000
+                        }
+                    }
+                ]
+            }
+        ],
         "basemaps": [
             {
                 "name": "osm",

@@ -1,5 +1,5 @@
 export default {
-    name: 'toggle-list-item',
+    name: 'list-item',
     store: ['app'],
     props: ['feature'],
     methods: {
