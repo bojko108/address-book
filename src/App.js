@@ -94,7 +94,7 @@ export default {
         });
         if (feature) this.mainLayer.getSource().addFeature(feature);
       } else {
-        this.geocoder.geocodeByAddress(data.address, 'openstreetmap')
+        this.geocoder.geocodeByAddress(data.address, 'google')
           .then(result => {
             if (result.length > 0 && result[0].latitude && result[0].longitude) {
               feature = this.createMarker(result[0]);
